@@ -7,10 +7,10 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # loading the model
-model = joblib.load('pipe_prc_mdl.pkl')
+model = joblib.load('./SubscriberTalentSearchPrediction/pipe_prc_mdl.pkl')
 
 # reading csv to get list values for all colums
-df = pd.read_csv('train.csv')
+df = pd.read_csv('./SubscriberTalentSearchPrediction/train.csv')
 #print(pd.unique(df['job']))
 
 # create method to predict with the input data
